@@ -14,6 +14,7 @@ app.get("/", function (req: Request, res: Response) {
 });
 
 app.get("/users", function (req: Request, res: Response) {
+  console.log(`users count=${users.length}`);
   res.send(users);
 });
 
